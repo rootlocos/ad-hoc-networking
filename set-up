@@ -1,0 +1,13 @@
+
+sudo apt-get update
+sudo apt-get upgrade
+
+sudo apt-get install git-all
+git version
+
+git clone https://github.com/simondlevy/RPiAdHocWiFi.git
+
+cd RPiAdHocWiFi
+sudo ./install.sh
+sudo reboot
+
