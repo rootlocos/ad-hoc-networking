@@ -1,5 +1,6 @@
 # RPiAdHocWiFi
-Simple ad-hoc wireless network support for Raspberry Pi.
+Simple ad-hoc wireless network support for Raspberry Pi
+base on https://github.com/simondlevy/RPiAdHocWiFi
 
 The RaspberryPi 3 and RaspberryPi Zero W come with a Broadcom wifi chip onboard, 
 making it easy to setup an ad-hoc wifi network for remote sensing, Internet of 
