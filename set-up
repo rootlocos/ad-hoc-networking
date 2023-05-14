@@ -1,6 +1,10 @@
 
 sudo apt-get update
 sudo apt-get upgrade
+sudo apt-get install python3-pip
+pip3 --version
+
+pip install paramiko
 
 sudo apt-get install git-all
 git version
