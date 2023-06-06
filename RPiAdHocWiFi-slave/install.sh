@@ -3,7 +3,9 @@
 #
 
 # install required packages
+sudo apt-get install python3-pip
 
+pip install paramiko
 # make backups of existing files
 if [ -e /etc/rc.local ]
 then

@@ -1,13 +1,15 @@
+#!/usr/bin/env python3.9
+
 #test output display
 print("Python file is open...")
 
 import paramiko
 
 # Define the parameters for SFTP connection
-host = "172.18.44.140" # Replace with IP address of the other Raspberry Pi
+host = "192.168.2.2" # Replace with IP address of the other Raspberry Pi
 port = 22
-username = "rootlocos" # Replace with the username for the other Raspberry Pi
-password = "Alonso545" # Replace with the password for the other Raspberry Pi
+username = "pi" # Replace with the username for the other Raspberry Pi
+password = "Aa123456" # Replace with the password for the other Raspberry Pi
 
 # Create an SFTP client object
 transport = paramiko.Transport((host, port))
@@ -15,7 +17,7 @@ transport.connect(username=username, password=password)
 sftp = paramiko.SFTPClient.from_transport(transport)
 
 # Transfer a file from the current Raspberry Pi to the other Raspberry Pi
-local_file_path = "home/pi/Sending_Files/Hello_File.py" # Replace with the path to the local file
+local_file_path = "home/pi/Hello_File.txt" # Replace with the path to the local file
 remote_file_path = "/home/alon/Desktop/pi/Receiving_Files/Hello_File_R.py" # Replace with the path to the remote file on the other Raspberry Pi
 sftp.put(local_file_path, remote_file_path)
 
